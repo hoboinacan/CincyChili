@@ -1,0 +1,51 @@
+module CincyChili {
+	imports {
+		Base
+	}
+	
+	item CannedCincyChiliOpen
+	{
+		DisplayName = Opened Canned Cincy Chili,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CincyChiliOpen,
+		CannedFood = TRUE,
+		EatType = can,
+		EvolvedRecipe = Stew:16;Stir fry Griddle Pan:16;Stir fry:16;Roasted Vegetables:16;RicePot:16;RicePan:16;Taco:8;Burrito:8;Omelette:8;Burger:8;Sandwich:8;Sandwich Baguette:8,
+		/*EvolvedRecipeName = Canned Chili,*/
+		EvolvedRecipeName = Chili,
+		FoodType = Meat,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -16,
+		Calories = 260,
+		Carbohydrates = 33,
+		Lipids = 7,
+		Proteins = 16,
+		StaticModel = CanOpen,
+		WorldStaticModel = CannedCincyChiliOpen_Ground,
+		Tags = HasMetal,
+	}
+	
+	item CannedCincyChili
+	{
+		DisplayName = Canned Cincy Chili,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CincyChili,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 260,
+		Carbohydrates = 33,
+		Lipids = 7,
+		Proteins = 16,
+		StaticModel = CanClosed,
+		WorldStaticModel = CannedCincyChiliClosed_Ground,
+		Tags = HasMetal,
+	}
+}

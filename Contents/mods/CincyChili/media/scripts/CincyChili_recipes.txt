@@ -1,0 +1,16 @@
+module CincyChili {
+	imports {
+		Base
+	}
+	
+	recipe Open Canned Cincy Chili {
+        CannedCincyChili,
+		keep [Recipe.GetItemTypes.CanOpener],
+
+        Result:CannedCincyChiliOpen,
+        Time:80.0,
+		Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:OpenCannedFood,
+	}
+}

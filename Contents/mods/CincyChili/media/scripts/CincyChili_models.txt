@@ -1,0 +1,12 @@
+module Base {
+	model CannedCincyChiliClosed_Ground {
+		mesh = CanClosed,
+		texture = WorldItems/CincyChiliCan,
+		scale = 1.0,
+	}
+	model CannedCincyChiliOpen_Ground {
+		mesh = CanOpen,
+		texture = WorldItems/CincyChiliCan,
+		scale = 1.0,
+	}
+}

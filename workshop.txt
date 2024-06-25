@@ -1,0 +1,8 @@
+version=1
+title=Cincy Chili
+description=Adds Cincinnati-style Chili as a new food to the game.
+description=
+description=
+description=
+tags=chili,cincy
+visibility=public
