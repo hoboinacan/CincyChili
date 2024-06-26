@@ -60,6 +60,7 @@ module CincyChili {
 		WaterPotPasta/WaterSaucepanPasta/PastaPan/PastaPot/PastaBowl,
 		CannedCincyChiliOpen,
 		Onion,
+		OpenBeans/Blackbeans,
 		Cheese,
 		
         Result:CincyChili5Way,
