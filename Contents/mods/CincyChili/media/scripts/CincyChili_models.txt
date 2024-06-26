@@ -9,4 +9,16 @@ module Base {
 		texture = WorldItems/CincyChiliCan,
 		scale = 1.0,
 	}
+	model CincyChili3Way_Ground
+	{
+		mesh = WorldItems/PiePreparation,
+		texture = WorldItems/CincyChili3Way,
+		scale = 0.45,
+	}
+	model CincyChiliConey_Ground
+    {
+        mesh = WorldItems/HotDog,
+        texture = WorldItems/CincyChiliConey,
+        scale = 0.4,
+    }
 }
