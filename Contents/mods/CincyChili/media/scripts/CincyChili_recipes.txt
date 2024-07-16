@@ -19,11 +19,12 @@ module CincyChili {
 		WaterPotPasta/WaterSaucepanPasta/PastaPan/PastaPot/PastaBowl,
 		CannedCincyChiliOpen,
 		Cheese,
-		
+        
         Result:CincyChili3Way,
+		OnCreate:Recipe.OnCreate.MakeCincyChiliPlate,
         Time:80.0,
 		Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound:EmptyPan,
 	}
 	
@@ -35,9 +36,10 @@ module CincyChili {
 		Cheese,
 		
         Result:CincyChili4WayBean,
+		OnCreate:Recipe.OnCreate.MakeCincyChiliPlate,
         Time:80.0,
 		Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking4,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound:EmptyPan,
 	}
 	
@@ -49,9 +51,10 @@ module CincyChili {
 		Cheese,
 		
         Result:CincyChili4WayOnion,
+		OnCreate:Recipe.OnCreate.MakeCincyChiliPlate,
         Time:80.0,
 		Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking4,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound:EmptyPan,
 	}
 
@@ -64,9 +67,10 @@ module CincyChili {
 		Cheese,
 		
         Result:CincyChili5Way,
+		OnCreate:Recipe.OnCreate.MakeCincyChiliPlate,
         Time:80.0,
 		Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking5,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound:EmptyPan,
 	}
 	
