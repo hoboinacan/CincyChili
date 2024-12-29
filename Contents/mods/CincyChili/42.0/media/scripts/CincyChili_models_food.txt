@@ -1,4 +1,8 @@
-module Base {
+module CincyChili {
+	imports {
+		Base
+	}
+	
 	model CannedCincyChiliClosed_Ground {
 		mesh = CanClosed,
 		texture = WorldItems/CincyChiliCan,

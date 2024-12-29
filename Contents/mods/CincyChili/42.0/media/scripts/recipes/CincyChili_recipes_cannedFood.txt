@@ -1,0 +1,142 @@
+module CincyChili {
+	imports {
+		Base
+	}
+	
+	craftRecipe OpenCannedCincyChili {
+        timedAction = OpenTinCan,
+        time = 100,
+        tags = InHandCraft;CanBeDoneInDark,
+		category = Cooking,
+        inputs
+        {
+            item 1 tags[CanOpener] mode:keep flags[MayDegradeLight],
+            item 1 [CincyChili.CannedCincyChili],
+		}
+		outputs
+		{
+			item 1 CincyChili.CannedCincyChiliOpen,
+		}
+	}
+	
+	craftRecipe Make 3-Way {
+        timedAction = Making,
+        time = 100,
+        tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Plate],
+			item 1 [Base.WaterPotPasta;Base.WaterSaucepanPasta;Base.PastaPan;Base.PastaBowl;Base.PastaPanCopper;Base.WaterSaucepanPastaCopper] mappers[containerType] flags[InheritFoodAge;IsCookedFoodItem],
+            item 1 [CincyChili.CannedCincyChiliOpen] flags[InheritFoodAge],
+			item 1 [Base.Cheese] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 CincyChili.CincyChili3Way,
+			item 1 Base.TinCanEmpty,
+			item 1 mapper:containerType,
+		}
+		itemMapper containerType
+		{
+			Base.Pot = Base.WaterPotPasta,
+			Base.Saucepan = Base.WaterSaucepanPasta,
+			Base.Saucepan = Base.PastaPan,
+			Base.Bowl = Base.PastaBowl,
+			Base.SaucepanCopper = Base.PastaPanCopper
+			Base.SaucepanCopper = Base.WaterSaucepanPastaCopper
+		}
+	}
+	
+	craftRecipe Make 4-Way {
+        timedAction = Making,
+        time = 100,
+        tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Plate],
+			item 1 [Base.WaterPotPasta;Base.WaterSaucepanPasta;Base.PastaPan;Base.PastaBowl;Base.PastaPanCopper;Base.WaterSaucepanPastaCopper] mappers[containerType] flags[InheritFoodAge;IsCookedFoodItem],
+            item 1 [CincyChili.CannedCincyChiliOpen] flags[InheritFoodAge],
+			item 1 [Base.Cheese] flags[InheritFoodAge],
+			item 1 [Base.Onion;Base.DriedBlackBeans;Base.DriedKidneyBeans;Base.DriedWhiteBeans;Base.OpenBeans;Base.Blackbeans] mappers[foodType] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 mapper:foodType,
+			item 1 Base.TinCanEmpty,
+			item 1 mapper:containerType,
+		}
+		itemMapper containerType
+		{
+			Base.Pot = Base.WaterPotPasta,
+			Base.Saucepan = Base.WaterSaucepanPasta,
+			Base.Saucepan = Base.PastaPan,
+			Base.Bowl = Base.PastaBowl,
+			Base.SaucepanCopper = Base.PastaPanCopper
+			Base.SaucepanCopper = Base.WaterSaucepanPastaCopper
+		}
+		itemMapper foodType
+		{
+			CincyChili.CincyChili4WayOnion = Base.Onion,
+			CincyChili.CincyChili4WayBean = Base.DriedBlackBeans,
+			CincyChili.CincyChili4WayBean = Base.DriedKidneyBeans,
+			CincyChili.CincyChili4WayBean = Base.DriedWhiteBeans,
+			CincyChili.CincyChili4WayBean = Base.OpenBeans,
+			CincyChili.CincyChili4WayBean = Base.Blackbeans,
+		}
+	}
+
+	craftRecipe Make 5-Way {
+        timedAction = Making,
+        time = 100,
+        tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Plate],
+			item 1 [Base.WaterPotPasta;Base.WaterSaucepanPasta;Base.PastaPan;Base.PastaBowl;Base.PastaPanCopper;Base.WaterSaucepanPastaCopper] mappers[containerType] flags[InheritFoodAge;IsCookedFoodItem],
+            item 1 [CincyChili.CannedCincyChiliOpen] flags[InheritFoodAge],
+			item 1 [Base.Cheese] flags[InheritFoodAge],
+			item 1 [Base.Onion] flags[InheritFoodAge],
+			item 1 [Base.DriedBlackBeans;Base.DriedKidneyBeans;Base.DriedWhiteBeans;Base.OpenBeans;Base.Blackbeans] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 CincyChili.CincyChili5Way,
+			item 1 Base.TinCanEmpty,
+			item 1 mapper:containerType,
+		}
+		itemMapper containerType
+		{
+			Base.Pot = Base.WaterPotPasta,
+			Base.Saucepan = Base.WaterSaucepanPasta,
+			Base.Saucepan = Base.PastaPan,
+			Base.Bowl = Base.PastaBowl,
+			Base.SaucepanCopper = Base.PastaPanCopper
+			Base.SaucepanCopper = Base.WaterSaucepanPastaCopper
+		}
+	}
+	
+	craftRecipe Make Cheese Coney {
+        timedAction = Making,
+        time = 100,
+        tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Hotdog] flags[InheritFoodAge],
+            item 1 [CincyChili.CannedCincyChiliOpen] flags[InheritFoodAge],
+			item 1 [Base.Cheese] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 CincyChili.CincyChiliConey,
+			item 1 Base.TinCanEmpty,
+		}
+	}
+}

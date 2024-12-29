@@ -1,0 +1,8 @@
+name=Cincy Chili [b42]
+id=CincyChili42
+poster=poster.png
+icon=icon.png
+modversion=1.0.0
+versionMin=42.0
+incompatible=41.78 or earlier
+description=Mod to add Cincinnati-style chili to the game.
