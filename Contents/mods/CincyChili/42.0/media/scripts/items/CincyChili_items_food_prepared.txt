@@ -110,7 +110,6 @@ module CincyChili {
 		FoodType = Meat,
 		GoodHot = true,
 		IsCookable = false,
-		ReplaceOnUse = Plate,
 		DaysFresh = 4,
 		DaysTotallyRotten = 7,
 		HungerChange = -30,
